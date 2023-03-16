@@ -7,4 +7,30 @@
 <p><a href="https://pan.huang1111.cn/s/65MXTN">按这里</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>Minecraft材质包制作教程</title>
+    <url>/2023/03/11/Minecraft%E6%9D%90%E8%B4%A8%E5%8C%85%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="一个基础的材质包"><a href="#一个基础的材质包" class="headerlink" title="一个基础的材质包"></a>一个基础的材质包</h1><p>本质上就是更换Minecraft贴图，所以我们需要找到贴图文件</p>
+<p>贴图在：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.minecraft</span><br><span class="line">    versions</span><br><span class="line">        版本</span><br><span class="line">            版本.jar</span><br></pre></td></tr></table></figure>
+
+<p>贴图在哪呢？</p>
+<p>别急，我们用解压缩软件打开</p>
+<p>噔噔！</p>
+<p>里面有个叫“assets“的文件夹！</p>
+<p>把这个复制出来</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">assets</span><br><span class="line">    minecraft</span><br><span class="line">        textures</span><br><span class="line">        block</span><br></pre></td></tr></table></figure>
+
+<p>这就是方块贴图</p>
+<p>Windows推荐用<a href="https://www.getpaint.net/">Paint.NET</a>来画，Linux可以用<a href="https://kitra.org/">Kitra</a>，Mac的就用<a href="https://www.adobe.com/cn/products/photoshop.html">Ps</a>吧！</p>
+<p>画完了的话，就新建个文件叫“pack.mcmeta”,里面是这样的：<br>*“pack.mcmeta”于“assets”同一目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   &quot;pack&quot;: &#123;</span><br><span class="line"></span><br><span class="line">&quot;pack_format&quot;: 6,</span><br><span class="line"></span><br><span class="line">&quot;description&quot;: &quot;简介&quot;</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>pack_format就是版本号：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.6-1.8 1</span><br><span class="line">1.9-1.10 2</span><br><span class="line">1.11-1.12 3</span><br><span class="line">1.13-1.14 4</span><br><span class="line">1.13-1.14 4</span><br><span class="line">1.15 5</span><br><span class="line">1.16 6（自己试的）</span><br><span class="line">pack_format 3和更高版本的时候，资源包中的所有文件名都只能有小写字母</span><br><span class="line">来自Minecraft Wiki</span><br></pre></td></tr></table></figure>
+
+<p>也可以弄个“pack.png”,顾名思义，材质包图标<br>*“pack.png”于“assets”同一目录</p>
+<p>只要压缩成“zip”文件，加载！</p>
+]]></content>
+  </entry>
 </search>
