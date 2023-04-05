@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>Minecraft材质包制作教程 |  小康の小窝</title>
+      <title>Mod 推荐 |  小康の小窝</title>
   <meta name="generator" content="hexo-theme-ayer">
        
 <link rel="stylesheet" href="/dist/main.css">
@@ -52,7 +52,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Minecraft材质包制作教程"
+  id="post-mc-mod"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -63,7 +63,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Minecraft材质包制作教程
+  Mod 推荐
 </h1>
  
 
@@ -71,15 +71,15 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2023/03/11/Minecraft%E6%9D%90%E8%B4%A8%E5%8C%85%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/" class="article-date">
-  <time datetime="2023-03-11T10:09:15.964Z" itemprop="datePublished">2023-03-11</time>
+      <a href="/2023/03/19/mc-mod/" class="article-date">
+  <time datetime="2023-03-19T08:15:08.607Z" itemprop="datePublished">2023-03-19</time>
 </a>   
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">252</span>
+            <span class="post-count">310</span>
         </span>
     </span>
 
@@ -103,27 +103,41 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="一个基础的材质包"><a href="#一个基础的材质包" class="headerlink" title="一个基础的材质包"></a>一个基础的材质包</h1><p>本质上就是更换Minecraft贴图，所以我们需要找到贴图文件</p>
-<p>贴图在：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.minecraft</span><br><span class="line">    versions</span><br><span class="line">        版本</span><br><span class="line">            版本.jar</span><br></pre></td></tr></table></figure>
-
-<p>贴图在哪呢？</p>
-<p>别急，我们用解压缩软件打开</p>
-<p>噔噔！</p>
-<p>里面有个叫“assets“的文件夹！</p>
-<p>把这个复制出来</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">assets</span><br><span class="line">    minecraft</span><br><span class="line">        textures</span><br><span class="line">        block</span><br></pre></td></tr></table></figure>
-
-<p>这就是方块贴图</p>
-<p>Windows推荐用<a target="_blank" rel="noopener" href="https://www.getpaint.net/">Paint.NET</a>来画，Linux可以用<a target="_blank" rel="noopener" href="https://kitra.org/">Kitra</a>，Mac的就用<a target="_blank" rel="noopener" href="https://www.adobe.com/cn/products/photoshop.html">Ps</a>吧！</p>
-<p>画完了的话，就新建个文件叫“pack.mcmeta”,里面是这样的：<br>*“pack.mcmeta”于“assets”同一目录</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   &quot;pack&quot;: &#123;</span><br><span class="line"></span><br><span class="line">&quot;pack_format&quot;: 6,</span><br><span class="line"></span><br><span class="line">&quot;description&quot;: &quot;简介&quot;</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>pack_format就是版本号：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1.6-1.8 1</span><br><span class="line">1.9-1.10 2</span><br><span class="line">1.11-1.12 3</span><br><span class="line">1.13-1.14 4</span><br><span class="line">1.13-1.14 4</span><br><span class="line">1.15 5</span><br><span class="line">1.16 6（自己试的）</span><br><span class="line">pack_format 3和更高版本的时候，资源包中的所有文件名都只能有小写字母</span><br><span class="line">来自Minecraft Wiki</span><br></pre></td></tr></table></figure>
-
-<p>也可以弄个“pack.png”,顾名思义，材质包图标<br>*“pack.png”于“assets”同一目录</p>
-<p>只要压缩成“zip”文件，加载！</p>
+  <h1 id="玉-Jade"><a href="#玉-Jade" class="headerlink" title="[玉] Jade"></a>[玉] Jade</h1><p>还在用Hwyla？<br>高版本Hwyla？<br>试试这个<br>功能还超级多</p>
+<ul>
+<li>容器显示</li>
+<li>破坏进度</li>
+<li>酿造台</li>
+<li>熔炉</li>
+<li>唱片机</li>
+<li>附魔</li>
+<li>生物效果</li>
+<li>生物繁殖</li>
+<li>生物信息</li>
+<li>刷怪笼</li>
+<li>宠物</li>
+<li>马信息</li>
+<li>村民</li>
+<li>物品展示框</li>
+<li>蜂箱</li>
+<li>盔甲架</li>
+<li>鸡蛋</li>
+<li>命令方块</li>
+<li>陷阱箱</li>
+<li>TNT</li>
+<li>音符盒</li>
+<li>画</li>
+<li>方块</li>
+<li>命令方块</li>
+<li>红石信息</li>
+<li>头颅</li>
+<li>其他</li>
+<li>能否挖掘</li>
+</ul>
+<h1 id="搬运-Carry-On"><a href="#搬运-Carry-On" class="headerlink" title="[搬运] Carry On"></a>[搬运] Carry On</h1><p>你手否因为般箱子而苦恼<br>试试这个<br>安装了空手Shift+右键可以拿起箱子<br>熔炉也可以<br>甚至生物都能举起来<br>这还不够离谱<br>连刷怪笼也能搬走</p>
+<h1 id="JEI"><a href="#JEI" class="headerlink" title="JEI"></a>JEI</h1><p>还在千度找合成表<br>安装他，打开背包就能看见界面<br>什么不会合成，点哪里，只要0.99元（狗头）</p>
+<h1 id="Xaero的小地图-amp-世界地图-Xareo’s-Minimap-amp-Worldmap"><a href="#Xaero的小地图-amp-世界地图-Xareo’s-Minimap-amp-Worldmap" class="headerlink" title="[Xaero的小地图&amp;世界地图] Xareo’s Minimap&amp;Worldmap"></a>[Xaero的小地图&amp;世界地图] Xareo’s Minimap&amp;Worldmap</h1><p>找不到家了？<br>别慌，安装这个<br>添加标记点<br>妈妈在也不怕我找不到家了（狗头X2）<br>而且相对流畅<br>妈妈在也不怕我电脑卡了（狗头X3）</p>
+<h1 id="物品栏HUD-Inventory-HUD"><a href="#物品栏HUD-Inventory-HUD" class="headerlink" title="[物品栏HUD+] Inventory HUD+"></a>[物品栏HUD+] Inventory HUD+</h1><p>美化界面<br>物品栏、药水、盔甲界面改良<br>还可以看耐久和箭的数量，以及背包剩余空间<br>生存党必备！</p>
  
       <!-- reward -->
       
@@ -152,10 +166,19 @@
    
   <nav class="article-nav">
     
+      <a href="/2023/03/19/mc-make-texture/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Minecraft 材质包制作教程
+          
+        </div>
+      </a>
     
-      <a href="/2023/03/08/Minecraft-BGM-%E4%B8%8B%E8%BD%BD/" class="article-nav-link">
+    
+      <a href="/2023/03/19/mc-optifine-shaders-doc/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Minecraft BGM 下载</div>
+        <div class="article-nav-title">Mincraft OptiFine Shaders 官方文档</div>
       </a>
     
   </nav>

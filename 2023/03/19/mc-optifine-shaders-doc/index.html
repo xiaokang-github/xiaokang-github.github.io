@@ -1,72 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Minecraft BGM 下载</title>
-    <url>/2023/03/08/mc-bgm-download/</url>
-    <content><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><hr>
-<p><a href="https://pan.huang1111.cn/s/65MXTN">按这里</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Minecraft 材质包制作教程</title>
-    <url>/2023/03/19/mc-make-texture/</url>
-    <content><![CDATA[<h1 id="一个基础的材质包"><a href="#一个基础的材质包" class="headerlink" title="一个基础的材质包"></a>一个基础的材质包</h1><p>本质上就是更换Minecraft贴图，所以我们需要找到贴图文件<br>贴图在：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.minecraft</span><br><span class="line">    versions</span><br><span class="line">        版本</span><br><span class="line">            版本.jar</span><br></pre></td></tr></table></figure>
-<p>贴图在哪呢？<br>别急，我们用解压缩软件打开<br>噔噔！<br>里面有个叫“assets“的文件夹！<br>把这个复制出来</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">assets</span><br><span class="line">    minecraft</span><br><span class="line">        textures</span><br><span class="line">            block</span><br></pre></td></tr></table></figure>
-<p>这就是方块贴图<br>Windows推荐用<a href="https://www.getpaint.net/">Paint.NET</a>来画，Linux可以用<a href="https://kitra.org/">Kitra</a>，Mac的就用<a href="https://www.adobe.com/cn/products/photoshop.html">Ps</a>吧！<br>画完了的话，就新建个文件叫“pack.mcmeta”,里面是这样的：<br>*“pack.mcmeta”于“assets”同一目录</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   &quot;pack&quot;: &#123;</span><br><span class="line">&quot;pack_format&quot;: 6,</span><br><span class="line">&quot;description&quot;: &quot;简介&quot;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>pack_format就是版本号：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.6-1.8 1</span><br><span class="line">1.9-1.10 2</span><br><span class="line">1.11-1.12 3</span><br><span class="line">1.13-1.14 4</span><br><span class="line">1.13-1.14 4</span><br><span class="line">1.15 5</span><br><span class="line">1.16 6（自己试的）</span><br><span class="line">pack_format 3和更高版本的时候，资源包中的所有文件名都只能有小写字母</span><br><span class="line">*来自Minecraft Wiki</span><br></pre></td></tr></table></figure>
-<p>也可以弄个“pack.png”,顾名思义，材质包图标<br>*“pack.png”于“assets”同一目录<br>只要压缩成“zip”文件，加载！<br>在“textures”其它的还有：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">colormap 不详</span><br><span class="line">effect 效果</span><br><span class="line">entity 生物（后面会说）</span><br><span class="line">environment 天空</span><br><span class="line">font 字体（后面会说）</span><br><span class="line">gui 界面</span><br><span class="line">item 物品</span><br><span class="line">map 地图</span><br><span class="line">misc 纹理</span><br><span class="line">mob_effect 效果图标</span><br><span class="line">models 盔甲</span><br><span class="line">painting 画</span><br><span class="line">particle 粒子</span><br></pre></td></tr></table></figure>
-<p>“minecraft”文件夹里的，都是配置（后面会说）</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Mod 推荐</title>
-    <url>/2023/03/19/mc-mod/</url>
-    <content><![CDATA[<h1 id="玉-Jade"><a href="#玉-Jade" class="headerlink" title="[玉] Jade"></a>[玉] Jade</h1><p>还在用Hwyla？<br>高版本Hwyla？<br>试试这个<br>功能还超级多</p>
-<ul>
-<li>容器显示</li>
-<li>破坏进度</li>
-<li>酿造台</li>
-<li>熔炉</li>
-<li>唱片机</li>
-<li>附魔</li>
-<li>生物效果</li>
-<li>生物繁殖</li>
-<li>生物信息</li>
-<li>刷怪笼</li>
-<li>宠物</li>
-<li>马信息</li>
-<li>村民</li>
-<li>物品展示框</li>
-<li>蜂箱</li>
-<li>盔甲架</li>
-<li>鸡蛋</li>
-<li>命令方块</li>
-<li>陷阱箱</li>
-<li>TNT</li>
-<li>音符盒</li>
-<li>画</li>
-<li>方块</li>
-<li>命令方块</li>
-<li>红石信息</li>
-<li>头颅</li>
-<li>其他</li>
-<li>能否挖掘</li>
-</ul>
-<h1 id="搬运-Carry-On"><a href="#搬运-Carry-On" class="headerlink" title="[搬运] Carry On"></a>[搬运] Carry On</h1><p>你手否因为般箱子而苦恼<br>试试这个<br>安装了空手Shift+右键可以拿起箱子<br>熔炉也可以<br>甚至生物都能举起来<br>这还不够离谱<br>连刷怪笼也能搬走</p>
-<h1 id="JEI"><a href="#JEI" class="headerlink" title="JEI"></a>JEI</h1><p>还在千度找合成表<br>安装他，打开背包就能看见界面<br>什么不会合成，点哪里，只要0.99元（狗头）</p>
-<h1 id="Xaero的小地图-amp-世界地图-Xareo’s-Minimap-amp-Worldmap"><a href="#Xaero的小地图-amp-世界地图-Xareo’s-Minimap-amp-Worldmap" class="headerlink" title="[Xaero的小地图&amp;世界地图] Xareo’s Minimap&amp;Worldmap"></a>[Xaero的小地图&amp;世界地图] Xareo’s Minimap&amp;Worldmap</h1><p>找不到家了？<br>别慌，安装这个<br>添加标记点<br>妈妈在也不怕我找不到家了（狗头X2）<br>而且相对流畅<br>妈妈在也不怕我电脑卡了（狗头X3）</p>
-<h1 id="物品栏HUD-Inventory-HUD"><a href="#物品栏HUD-Inventory-HUD" class="headerlink" title="[物品栏HUD+] Inventory HUD+"></a>[物品栏HUD+] Inventory HUD+</h1><p>美化界面<br>物品栏、药水、盔甲界面改良<br>还可以看耐久和箭的数量，以及背包剩余空间<br>生存党必备！</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Mincraft OptiFine Shaders 官方文档</title>
-    <url>/2023/03/19/mc-optifine-shaders-doc/</url>
-    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Shaders Mod makes use of a deferred rendering pipeline.<br>The gbuffer shaders come first in the pipeline. They render data to textures that will be sent to the composite shaders.<br>Optional composite shaders can be added after the shadow map (shadowcomp), before terrain (prepare) and before water rendering (deferred).<br>The composite shaders then render to textures that will be sent to the final shader.<br>The final shader renders directly to the screen.</p>
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>Mincraft OptiFine Shaders 官方文档 |  小康の小窝</title>
+  <meta name="generator" content="hexo-theme-ayer">
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+  
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    </head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-mc-optifine-shaders-doc"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Mincraft OptiFine Shaders 官方文档
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/03/19/mc-optifine-shaders-doc/" class="article-date">
+  <time datetime="2023-03-19T08:02:10.323Z" itemprop="datePublished">2023-03-19</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">4.3k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">27 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>The Shaders Mod makes use of a deferred rendering pipeline.<br>The gbuffer shaders come first in the pipeline. They render data to textures that will be sent to the composite shaders.<br>Optional composite shaders can be added after the shadow map (shadowcomp), before terrain (prepare) and before water rendering (deferred).<br>The composite shaders then render to textures that will be sent to the final shader.<br>The final shader renders directly to the screen.</p>
 <h1 id="Shader-Files"><a href="#Shader-Files" class="headerlink" title="Shader Files"></a>Shader Files</h1><p>All shader files are placed in the folder “shaders” of the shader pack.<br>The shader source files use the name of the program in which they are to be used with extension depending on their type.</p>
 <h1 id="Extension-Type"><a href="#Extension-Type" class="headerlink" title="Extension  Type                 "></a>Extension  Type                 </h1><p>.csh       Compute shader<br>.vsh       Vertex shader<br>.gsh       Geometry shader<br>.fsh       Fragment shader   </p>
 <p>Geometry shaders need either OpenGL 3.2 with layout qualifiers or the extension GL_ARB_geometry_shader4 (GL_EXT_geometry_shader4)<br>with configuration “maxVerticesOut”.</p>
@@ -133,9 +170,408 @@
 <p>F. GPU<br> One of the following:<br>  #define MC_GL_RENDERER_RADEON<br>  #define MC_GL_RENDERER_GEFORCE<br>  #define MC_GL_RENDERER_QUADRO<br>  #define MC_GL_RENDERER_INTEL<br>  #define MC_GL_RENDERER_GALLIUM<br>  #define MC_GL_RENDERER_MESA<br>  #define MC_GL_RENDERER_OTHER</p>
 <p>G. OpenGL extensions<br> Macros for the supported OpenGL extensions are named like the corresponding extension with a prefix “MC_”.<br> For example the macro “MC_GL_ARB_shader_texture_lod” is defined when the extension “GL_ARB_shader_texture_lod” is supported.<br> Only the macros which are referenced and supported are added to the shader file.</p>
 <p>H. Options<br> #define MC_FXAA_LEVEL <value>             &#x2F;&#x2F; When FXAA is enabled, values: 2, 4<br> #define MC_NORMAL_MAP                     &#x2F;&#x2F; When the normal map is enabled<br> #define MC_SPECULAR_MAP                   &#x2F;&#x2F; When the specular map is enabled<br> #define MC_RENDER_QUALITY <value>         &#x2F;&#x2F; Values: 0.5, 0.70710677, 1.0, 1.4142135, 2.0<br> #define MC_SHADOW_QUALITY <value>         &#x2F;&#x2F; Values: 0.5, 0.70710677, 1.0, 1.4142135, 2.0<br> #define MC_HAND_DEPTH <value>             &#x2F;&#x2F; Values: 0.0625, 0.125, 0.25<br> #define MC_OLD_HAND_LIGHT                 &#x2F;&#x2F; When Old Hand Light is enabled<br> #define MC_OLD_LIGHTING                   &#x2F;&#x2F; When Old Lighting is enabled<br> #define MC_ANISOTROPIC_FILTERING <value>  &#x2F;&#x2F; When anisotropic filtering is enabled</p>
-<p>I. Textures<br> #define MC_TEXTURE_FORMAT_LAB_PBR       &#x2F;&#x2F; Texture format LabPBR (<a href="https://github.com/rre36/lab-pbr/wiki">https://github.com/rre36/lab-pbr/wiki</a>)<br> #define MC_TEXTURE_FORMAT_LAB_PBR_1_3   &#x2F;&#x2F; Version 1.3<br> (see “texture.properties”)</p>
+<p>I. Textures<br> #define MC_TEXTURE_FORMAT_LAB_PBR       &#x2F;&#x2F; Texture format LabPBR (<a target="_blank" rel="noopener" href="https://github.com/rre36/lab-pbr/wiki">https://github.com/rre36/lab-pbr/wiki</a>)<br> #define MC_TEXTURE_FORMAT_LAB_PBR_1_3   &#x2F;&#x2F; Version 1.3<br> (see “texture.properties”)</p>
 <p>J. Render stages<br> &#x2F;&#x2F; Constants for the uniform “renderStage”<br> &#x2F;&#x2F; The constants are given in the order in which the stages are executed<br> #define MC_RENDER_STAGE_NONE <const>                    &#x2F;&#x2F; Undefined<br> #define MC_RENDER_STAGE_SKY <const>                     &#x2F;&#x2F; Sky<br> #define MC_RENDER_STAGE_SUNSET <const>                  &#x2F;&#x2F; Sunset and sunrise overlay<br> #define MC_RENDER_STAGE_CUSTOM_SKY <const>              &#x2F;&#x2F; Custom sky<br> #define MC_RENDER_STAGE_SUN <const>                     &#x2F;&#x2F; Sun<br> #define MC_RENDER_STAGE_MOON <const>                    &#x2F;&#x2F; Moon<br> #define MC_RENDER_STAGE_STARS <const>                   &#x2F;&#x2F; Stars<br> #define MC_RENDER_STAGE_VOID <const>                    &#x2F;&#x2F; Void<br> #define MC_RENDER_STAGE_TERRAIN_SOLID <const>           &#x2F;&#x2F; Terrain solid<br> #define MC_RENDER_STAGE_TERRAIN_CUTOUT_MIPPED <const>   &#x2F;&#x2F; Terrain cutout mipped<br> #define MC_RENDER_STAGE_TERRAIN_CUTOUT <const>          &#x2F;&#x2F; Terrain cutout<br> #define MC_RENDER_STAGE_ENTITIES <const>                &#x2F;&#x2F; Entities<br> #define MC_RENDER_STAGE_BLOCK_ENTITIES <const>          &#x2F;&#x2F; Block entities<br> #define MC_RENDER_STAGE_DESTROY <const>                 &#x2F;&#x2F; Destroy overlay<br> #define MC_RENDER_STAGE_OUTLINE <const>                 &#x2F;&#x2F; Selection outline<br> #define MC_RENDER_STAGE_DEBUG <const>                   &#x2F;&#x2F; Debug renderers<br> #define MC_RENDER_STAGE_HAND_SOLID <const>              &#x2F;&#x2F; Solid handheld objects<br> #define MC_RENDER_STAGE_TERRAIN_TRANSLUCENT <const>     &#x2F;&#x2F; Terrain translucent<br> #define MC_RENDER_STAGE_TRIPWIRE <const>                &#x2F;&#x2F; Tripwire string<br> #define MC_RENDER_STAGE_PARTICLES <const>               &#x2F;&#x2F; Particles<br> #define MC_RENDER_STAGE_CLOUDS <const>                  &#x2F;&#x2F; Clouds<br> #define MC_RENDER_STAGE_RAIN_SNOW <const>               &#x2F;&#x2F; Rain and snow<br> #define MC_RENDER_STAGE_WORLD_BORDER <const>            &#x2F;&#x2F; World border<br> #define MC_RENDER_STAGE_HAND_TRANSLUCENT <const>        &#x2F;&#x2F; Translucent handheld objects</p>
-<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><p> <a href="http://daxnitro.wikia.com/wiki/Editing_Shaders_%28Shaders2%29">http://daxnitro.wikia.com/wiki/Editing_Shaders_%28Shaders2%29</a><br> <a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1286604-shaders-mod-updated-by-karyonix">http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1286604-shaders-mod-updated-by-karyonix</a><br> <a href="http://www.minecraftforum.net/forums/search?by-author=karyonix&display-type=posts">http://www.minecraftforum.net/forums/search?by-author=karyonix&amp;display-type=posts</a><br> <a href="http://www.seas.upenn.edu/~cis565/fbo.htm#feedback">http://www.seas.upenn.edu/~cis565/fbo.htm#feedback</a></p>
-]]></content>
-  </entry>
-</search>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><p> <a target="_blank" rel="noopener" href="http://daxnitro.wikia.com/wiki/Editing_Shaders_%28Shaders2%29">http://daxnitro.wikia.com/wiki/Editing_Shaders_%28Shaders2%29</a><br> <a target="_blank" rel="noopener" href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1286604-shaders-mod-updated-by-karyonix">http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1286604-shaders-mod-updated-by-karyonix</a><br> <a target="_blank" rel="noopener" href="http://www.minecraftforum.net/forums/search?by-author=karyonix&display-type=posts">http://www.minecraftforum.net/forums/search?by-author=karyonix&amp;display-type=posts</a><br> <a target="_blank" rel="noopener" href="http://www.seas.upenn.edu/~cis565/fbo.htm#feedback">http://www.seas.upenn.edu/~cis565/fbo.htm#feedback</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2023/03/19/mc-mod/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Mod 推荐
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2023/03/08/mc-bgm-download/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Minecraft BGM 下载</div>
+      </a>
+    
+  </nav>
+
+  
+   
+  
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2023
+        <i class="ri-heart-fill heart_icon"></i> Xiao Kang
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    
+
+  </div>
+</body>
+
+</html>
